@@ -4,7 +4,7 @@ from django.db import models
 
 class Prueba(models.Model):
     title = models.CharField(max_length=100)
-    description = models.CharField(max_length=100)
+    description = models.CharField(max_length=550)
     image = models.ImageField(upload_to='prueba/images/')
     url = models.URLField(blank=True)
     
