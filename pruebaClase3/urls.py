@@ -26,6 +26,8 @@ urlpatterns = [
     path('',pruebaViews.home),
     path('about/',pruebaViews.about, name='about'),
     path('news/', include('news.urls')),
+    path('statistics/', pruebaViews.statistics_view, name='statistics'),
+    path('singup/', pruebaViews.signup, name='signup'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
